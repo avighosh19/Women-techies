@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .search1{
+          position: absolute;
+  width: 60%;
+  height: 40px;
+  left: 46px;
+  top: 72px;
+
+
+  background: #FFFDFD;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      .rectangle1{
+        position: absolute;
+  width: 188px;
+  height: 33px;
+  left: 50px;
+  top: 12px;
+
+
+
+      }
+
+      .frame2{
+        position: absolute;
+width: 799px;
+height: 70px;
+left: 3px;
+top: 115px;
+margin-top:30px;
+
+      }
+      .rectangle2{
+        position: absolute;
+width: 188px;
+height: 33px;
+left: 312px;
+top: 8px;
+
+
+      }
+      .rectangle3{
+        position: absolute;
+width: 188px;
+height: 33px;
+left: 569px;
+top: 8px;
+
+
+      }
+
+      .submit{
+        position: absolute;
+width: 150px;
+height: 30px;
+left: 840px;
+top: 72px;
+
+background: linear-gradient(180deg, #593434 0%, rgba(255, 255, 255, 0) 100%), #CDCECE;
+backdrop-filter: blur(4px);
+      }
+      .textformat{
+        position: absolute;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+color:#DC3D24;
+
+      }
+      .onit{
+        position: absolute;
+width: 245px;
+height: 71px;
+left: 305px;
+top: 302px;
+
+background: rgba(204, 60, 60, 0.8);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      </style>
+
+
+
+
+  </head>
+  <body><form>
+  <input type="search" class="search1"value="search"></input>
+    <button type="button" name="button" class="submit" value="search">Submit</button></form>
+  <div class="frame2">
+    <div class="rectangle1" ><p class="textformat">BLOOD TYPE</p>
+      <br><input type="text" name="" value=""><button type="button" name="button" id="sub" onsubmit="sub12()">Submit</button>
+
+
+
+
+
+    <div class="rectangle2"><p class="textformat">DONORS AVAILABLE</p>   <br><input type="text" name="" value="" onsubmit="sub12()"><button type="button" name="button" id="sub1">Submit</button></div>
+
+    <div class="rectangle3"><p class="textformat">REQUIRED BEFORE</p><br><input type="text" name="" value=""><button type="button" name="button" id="sub2" onsubmit="sub12()">Submit</button></div>
+  </div>
+  <div class="onit"><center><h1><a href="map.html" color="white">MAP VIEW</a></h1></center></div>
+
+
+
+
+
+  <script type="text/javascript">
+    function sub12(){
+    var bloodtype=document.getElementById("sub").value;
+    var donors=document.getElementById("sub1").value;
+    var required=document.getElementById("sub2").value;console.log("sub")
+    if(bloodtype=="O+"||bloodtype=="o+"||bloodtype=="O-"||bloodtype=="o-"||bloodtype=="B+"||bloodtype=="b+"||bloodtype=="A+"||bloodtype=="a+"||bloodtype=="A-"||bloodtype=="a-"||bloodtype=="B-"||bloodtype=="b-"||bloodtype=="AB+"||bloodtype=="ab+"||bloodtype=="AB-"||bloodtype=="ab-")
+    {
+      document.write("Your Blood group type "+bloodtype);
+
+    }
+    else
+    {
+      alert("wrong informataion")
+    }
+
+ };
+  </script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8btFJNGpTGYhs0hwAZa_mE28Aqrt9cds&libraries=places&callback=initMap" async defer></script>
+</html>
